@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     color: white;
 }
 
@@ -36,8 +36,8 @@ img {
 
 figure > img {
     display: block;
-    width: 300px;
-    height: 150px;
+    width: 350px;
+    height: 190px;
 }
 
 /* HEADER SETTING */
@@ -79,14 +79,66 @@ figure > img {
 
 
 /* FOOTER SETTING */
+.app-toolbar {
+    background-color: #222222;
+}
+
 .app-toolbar .col {
     display: flex;
+    padding: 5px 0px 15px 0px;
+    gap: 10px;
 }
+
+.app-toolbar .col.button {
+    padding: 0;
+}
+
 
 .app-toolbar .row {
     justify-content: space-between;
 }
 
+.card-icon {
+    line-height: 60px;
+    width: 60px;
+    font-size: 40px;
+    aspect-ratio: 1;
+    text-align: center;
+}
+
+.app-toolbar .card {
+    text-align: center;
+    margin: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-toolbar .card.align-start {
+    align-items: flex-start;
+}
+
+.col.button {
+    width: 150px;
+    background-color: #4a4a4a;
+    justify-content: center;
+    align-items: center;
+}
+
+.end-button {
+    height: 100%;
+    width: 100%;
+}
+.end-button button {
+    background: none;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    color: red;
+    font-size: large;
+    font-weight: 500;
+}
 /* DEBUG */
 
 /* --general debug-- */
