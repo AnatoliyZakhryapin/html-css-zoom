@@ -6,20 +6,112 @@
     box-sizing: border-box;
 }
 
+/* GENERAL SETTING*/
+
+body {
+    font-size: 14px;
+}
+
+.app {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+}
+
+/* HEADER SETTING */
+
+
+
+/* MAIN SETTING */
+.app-content {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 70px 70px 30px 70px;
+}
+
+.app-content .row [class^='col'] {
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+}
+
+.app-content .name-line {
+    display: flex;
+}
+
+/* FOOTER SETTING */
+.app-toolbar .col {
+    display: flex;
+}
+
+.app-toolbar .row {
+    justify-content: space-between;
+}
+
 /* DEBUG */
+
+/* --general debug-- */
 
 .debug .container {
     border: 3px solid black;
-    padding: 30px;
-}
+    padding: 20px;
+    margin: 0 auto;
+}    
 
 .debug .row {
     border: 2px solid blue;
-    padding: 20px;
-}
+    padding: 10px;
+}    
 
 .debug .row [class^='col'] {
     border: 1px dashed green;
-    min-height: 300px;
     padding: 10px;
 }
+
+.debug .card {
+    padding: 10px;
+    border: 1px dashed green;
+}
+    
+/* --header-- */
+
+.debug .speaker-view {
+    background-color: salmon;
+    padding: 10px 0px;
+}
+
+.debug .speaker-view .row {
+   justify-content: flex-end;
+}  
+
+/* --main-- */
+
+.debug .app-content {
+    background-color: rgb(251, 255, 0);
+}
+
+/* --footer-- */
+
+.debug .app-toolbar {
+    background-color: brown;
+    padding: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
