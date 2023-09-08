@@ -41,14 +41,30 @@ figure > img {
 }
 
 /* HEADER SETTING */
+.speaker-button {
+    background-color: #4a4a4a;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    margin-right: 6px;
+}
 
+.speaker-view .col {
+    position: fixed;
+    right: 24px;
+    top: 15px;
+    z-index: 1;
+}
 
 
 /* MAIN SETTING */
 .app-content {
     flex-grow: 1;
     overflow: auto;
-    padding: 50px 50px 20px 50px;
+    padding: 80px 50px 20px 50px;
 }
 
 .app-content .row [class^='col'] {
